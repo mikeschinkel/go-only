@@ -30,7 +30,7 @@ func example() (value Value, err error) {
 }
 ```
 
-And here is another way we might write that same function _(Notice how we do work after the `break` but before the `return`):
+And here is another way we might write that same function _(Notice how we do work after the `break` but before the `return`):_
 
 ```golang
 func example() (value Value, err error) {
@@ -69,7 +69,7 @@ The longer term benefits are less obvious, but experience reveals them to be eve
 1. Functions that have too many breaks need to be broken up is an obvious indicator they need to be split into two or more.
 2. Functions that need nested `for range only.Once {}` constructs need to be broken up.
 3. This establishes a very easy to remember and easy to write repeatable pattern for code, unlike w/early returns.
-4. Using this pattern it become extremely easy to move logic to other functions during refactor w/o having to restructure logic
+4. Using this pattern it become extremely easy to move logic to other functions during refactor w/o having to restructure logic.
 
 ## Shortcomings
 Given that this is a technique and not a built-in language feature:
@@ -80,8 +80,8 @@ Given that this is a technique and not a built-in language feature:
 
 ### HOWEVER:
 
-1. If the Go team were to add a dedicated construct to replace this technique and 
-2. I Go 2.0 decided to drop block-specific variable scoping — which IMO causes far too many bugs and offers few to no real benefits — then you might no longer need to explicitly declare variables.
+1. If the Go team were to add a dedicated construct to replace this technique, and 
+2. I [Go 2.0](https://github.com/golang/go/wiki/Go2) decided to drop block-specific variable scoping — which IMO causes far too many bugs and offers few to no real benefits — then you might no longer need to explicitly declare variables.
 
 So, if after using this technique you recognize is has the same level of value that I do, please help me lobby the Go team to get rid of these two (2) shortcomings.
 
