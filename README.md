@@ -76,9 +76,9 @@ Given that this is a technique and not a built-in language feature:
 
 1. It might be **infintismally slower** than an early `return`. So if every nanosecond matters in your executions you might be better to return early in the time critical sections of your code. However, I doubt you will even be able to measure the differences in most cases.
 
-2. You might need to **explicitly declare variables** in contexts where you would not have to with early returns.
+2. You might need to **explicitly declare variables** in contexts where you would not have to with early returns. You can see this in the second version of the `example()` func above.
 
-HOWEVER:
+### HOWEVER:
 
 1. If the Go team were to add a dedicated construct to replace this technique and 
 2. I Go 2.0 decided to drop block-specific variable scoping — which IMO causes far too many bugs and offers few to no real benefits — then you might no longer need to explicitly declare variables.
