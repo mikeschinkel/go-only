@@ -1,3 +1,10 @@
+# UPDATE
+
+- I have since replaced `for only.Once { ... break ... }` with simply using a `goto end`...`end:` which is actually much cleaner, and all the benefits still apply.
+
+_(Unfortunately too many people have a knee-jerk negative reaction to using goto because `goto` has so many bad uses. But `goto` [has several](https://stackoverflow.com/questions/24451/are-there-any-legitimate-use-cases-for-goto-in-a-language-that-supports-loops) [legitimate uses](https://softwareengineering.stackexchange.com/questions/566/is-using-goto-ever-worthwhile), and this is one of those.)_
+
+
 # only.Once
 
 Tiny GoLang package to support use of the `for range only.Once {...}` construct. 
