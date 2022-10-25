@@ -1,3 +1,7 @@
+# UPDATE #2
+
+See [github.com/mikeschinkel/goto-considered-useful](https://github.com/mikeschinkel/goto-considered-useful#readme) instead of this archived repo.
+
 # UPDATE
 
 - I have since replaced `for only.Once { ... break ... }` with simply using a `goto end`...`end:` which is actually much cleaner, and [**all the benefits**](#benfits) still apply.
